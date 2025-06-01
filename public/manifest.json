@@ -1,6 +1,8 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "내일 뭐 입지?",
+  "name": "내일 뭐 입지?",
+  "description": "AI 기반의 옷 추천 서비스로, 사용자의 취향과 날씨를 고려하여 최적의 옷차림을 제안합니다.",
+  "lang": "ko",
   "icons": [
     {
       "src": "favicon.ico",
@@ -8,18 +10,13 @@
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
+      "src": "logo.png",
       "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
-      "src": "logo512.png",
-      "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "336×370"
     }
   ],
-  "start_url": ".",
+  "start_url": "https://clothes-ai.vercel.app/",
   "display": "standalone",
-  "theme_color": "#000000",
+  "theme_color": "#f3f3f3",
   "background_color": "#ffffff"
 }
