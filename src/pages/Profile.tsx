@@ -15,12 +15,12 @@ export default function Profile() {
           <div className="w-24 h-24 bg-gray-200 flex items-center justify-center mb-4 overflow-clip rounded-full">
             <img
               src="/profile.png"
-              alt="홍길동 프로필 사진"
+              alt="프로필 사진"
               className="w-full aspect-square object-cover"
             />
           </div>
-          <h2 className="text-lg font-bold mb-1">홍길동</h2>
-          <p className="text-sm text-gray-500 mb-2">hong@outfitchat.kr</p>
+          <h2 className="text-lg font-bold mb-1">김동국</h2>
+          <p className="text-sm text-gray-500 mb-2">donguk@outfitchat.kr</p>
           <div className="w-full border-t pt-4 space-y-2 text-sm text-gray-700">
             <p>
               <span className="font-medium">나이:</span> 29세

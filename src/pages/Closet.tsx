@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
 import BottomNav from "../components/BottomNav";
 
 type Tab = "아우터" | "상의" | "하의" | "신발" | "기타";
@@ -30,12 +29,9 @@ export default function Closet() {
     <div className="min-h-screen pb-16">
       <header className="px-4 py-6 text-start text-xl font-bold flex flex-row items-center justify-between">
         내 옷장
-        <Link
-          to="/closet/new"
-          className="text-sm text-white bg-black px-4 py-2 rounded-xl font-semibold hover:bg-gray-800 transition-colors"
-        >
+        <div className="cursor-pointer text-sm text-white bg-black px-4 py-2 rounded-xl font-semibold hover:bg-gray-800 transition-colors">
           + 아이템 등록
-        </Link>
+        </div>
       </header>
 
       {/* Tabs */}

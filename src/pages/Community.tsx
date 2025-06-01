@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import BottomNav from "../components/BottomNav";
 
 const posts = [
@@ -35,12 +34,9 @@ export default function Community() {
       {/* Header */}
       <header className="px-4 py-6 text-start text-xl font-bold flex flex-row items-center justify-between">
         커뮤니티
-        <Link
-          to="/community/new"
-          className="text-sm text-white bg-black px-4 py-2 rounded-xl font-semibold hover:bg-gray-800 transition-colors"
-        >
+        <div className="cursor-pointer text-sm text-white bg-black px-4 py-2 rounded-xl font-semibold hover:bg-gray-800 transition-colors">
           새 글 쓰기
-        </Link>
+        </div>
       </header>
 
       {/* List */}

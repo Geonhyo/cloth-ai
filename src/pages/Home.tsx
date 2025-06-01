@@ -11,41 +11,61 @@ export default function Home() {
 
       {/* Main content */}
       <main className="flex-1 px-4 py-2 space-y-4">
-        <div className="flex-1 grid grid-cols-[1fr_2fr] grid-rows-[1fr_2fr]  gap-4">
-          {/* 날씨 */}
-          <div className="bg-white rounded-xl shadow p-4 flex items-center justify-between row-span-1 col-span-1">
-            <div>
-              <div className="text-sm text-gray-500">서울특별시</div>
-              <div className="text-2xl font-bold">17°</div>
-              <div className="text-gray-600">비</div>
-            </div>
-            <div className="text-3xl">☔️</div> {/* 우산 아이콘 */}
+        <div className="flex flex-row gap-2 items-stretch">
+          <div className="flex flex-col gap-2 w-full items-stretch">
+            {/* 날씨 */}
+            <Link
+              className="bg-white rounded-xl shadow p-4 flex items-center justify-between row-span-1 col-span-1"
+              to="/chat/250612-weather"
+            >
+              <div>
+                <div className="text-sm text-gray-500">서울특별시</div>
+                <div className="text-2xl font-bold">20°</div>
+                <div className="text-gray-600">비</div>
+              </div>
+              <div className="text-3xl">☔️</div> {/* 우산 아이콘 */}
+            </Link>
+            {/* 출근 준비 */}
+            <Link
+              className="bg-white rounded-xl shadow p-4 flex flex-col items-center justify-center gap-4"
+              to="/chat/250612-work"
+            >
+              <div className="text-base font-semibold text-gray-500">
+                내 출근룩
+              </div>
+              <div className="aspect-square bg-gray-100 rounded-xl shadow overflow-hidden">
+                <img
+                  src="/250612-work.jpeg"
+                  alt="출근 준비"
+                  className="w-full object-cover"
+                />
+              </div>
+            </Link>
           </div>
 
-          {/* 출근 준비 */}
-          <div className="bg-white rounded-xl shadow p-4 flex flex-col items-center justify-center gap-1 row-start-2 col-start-1">
-            <div className="text-base font-semibold text-gray-500">
-              출근 준비
-            </div>
-            <img src="/work-outfit.png" alt="출근 준비" className="w-full" />
-          </div>
-
-          {/* 오늘의 추천 */}
-          <div className="bg-white rounded-xl shadow p-4 flex flex-col items-center justify-center gap-1 row-span-2 col-start-2 row-start-1">
-            <div className="text-lg font-semibold text-gray-500">
-              오늘의 추천
-            </div>
-            <img
-              src="/recommend-outfit.png"
-              alt="오늘의 추천"
-              className="w-full rounded-lg"
-            />
+          <div className="flex flex-col gap-2 w-full items-stretch justify-center">
+            {/* 오늘의 추천 */}
+            <Link
+              className="bg-white rounded-xl shadow p-4 flex flex-col items-center justify-center gap-4"
+              to="/chat/250612-today"
+            >
+              <div className="text-base font-semibold text-gray-500">
+                오늘의 추천
+              </div>
+              <div className="aspect-square bg-gray-100 rounded-xl shadow overflow-hidden">
+                <img
+                  src="/250612-today.png"
+                  alt="오늘의 추천"
+                  className="w-full object-cover"
+                />
+              </div>
+            </Link>
           </div>
         </div>
 
         {/* 옷장과 대화 버튼 */}
         <Link
-          to="/chat"
+          to="/chat/new"
           className="block w-full bg-black text-white text-center py-3 rounded-xl font-semibold"
         >
           옷장과 대화하러 가기
