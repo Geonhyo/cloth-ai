@@ -1,7 +1,7 @@
 {
   "short_name": "내일 뭐 입지?",
   "name": "내일 뭐 입지?",
-  "description": "AI 기반의 옷 추천 서비스로, 사용자의 취향과 날씨를 고려하여 최적의 옷차림을 제안합니다.",
+  "description": "AI 기반의 옷 추천 서비스로, 사용자가 보유한 옷과 다양한 개인 맞춤 상황을 고려하여 최적의 옷차림을 제안합니다.",
   "lang": "ko",
   "icons": [
     {
@@ -15,7 +15,7 @@
       "sizes": "336×370"
     }
   ],
-  "start_url": "https://clothes-ai.vercel.app/",
+  "start_url": "https://outfitchat.vercel.app/",
   "display": "standalone",
   "theme_color": "#f3f3f3",
   "background_color": "#ffffff"
