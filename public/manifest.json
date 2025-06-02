@@ -1,7 +1,7 @@
 {
-  "short_name": "내일 뭐 입지?",
-  "name": "내일 뭐 입지?",
-  "description": "AI 기반의 옷 추천 서비스로, 사용자가 보유한 옷과 다양한 개인 맞춤 상황을 고려하여 최적의 옷차림을 제안합니다.",
+  "short_name": "OutfitChat",
+  "name": "OutfitChat",
+  "description": "사용자가 보유한 옷과 다양한 상황을 고려한 AI 기반의 옷 추천 서비스",
   "lang": "ko",
   "icons": [
     {

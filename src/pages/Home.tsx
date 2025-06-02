@@ -6,7 +6,7 @@ export default function Home() {
     <div className="min-h-screen flex flex-col pb-16">
       {/* Header */}
       <header className="px-4 py-6 text-start text-xl font-bold">
-        내일 뭐 입지?
+        OutfitChat
       </header>
 
       {/* Main content */}
